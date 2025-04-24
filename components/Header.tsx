@@ -28,11 +28,11 @@ export default function Header(){
             </button>
 
             <nav className="hidden md:flex items-center space-x-8">
-                <Link href="/" className="text-green-600 font-medium">
+                <Link href="/" className="text-[#009846] font-medium">
                     Home
                 </Link>
                 <div className="relative group">
-                    <button className="flex items-center text-gray-700 font-medium group-hover:text-green-600">
+                    <button className="flex items-center text-gray-700 font-medium group-hover:text-[#009846]">
                     About Us
                     <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -48,7 +48,7 @@ export default function Header(){
                     </div>
                 </div>
                 <div className="relative group">
-                    <button className="flex items-center text-gray-700 font-medium group-hover:text-green-600">
+                    <button className="flex items-center text-gray-700 font-medium group-hover:text-[#009846]">
                     Businesses
                     <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -64,7 +64,7 @@ export default function Header(){
                     </div>
                 </div>
                 <div className="relative group">
-                    <button className="flex items-center text-gray-700 font-medium group-hover:text-green-600">
+                    <button className="flex items-center text-gray-700 font-medium group-hover:text-[#009846]">
                     Projects
                     <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -79,13 +79,13 @@ export default function Header(){
                     </div>
                     </div>
                 </div>
-                <Link href="/career" className="text-gray-700 font-medium hover:text-green-600">
+                <Link href="/career" className="text-gray-700 font-medium hover:text-[#009846]">
                     Career
                 </Link>
-                <Link href="/contact" className="text-gray-700 font-medium hover:text-green-600">
+                <Link href="/contact" className="text-gray-700 font-medium hover:text-[#009846]">
                     Contact
                 </Link>
-                <Link href="/blog" className="text-gray-700 font-medium hover:text-green-600">
+                <Link href="/blog" className="text-gray-700 font-medium hover:text-[#009846]">
                     Blog
                 </Link>
             </nav>
@@ -125,7 +125,7 @@ export default function Header(){
             {isMenuOpen && (
             <div className="md:hidden absolute top-20 left-0 right-0 bg-white shadow-md z-100">
                 <nav className="flex flex-col py-4 ">
-                <Link href="/" className="px-4 py-2 text-green-600 font-medium" onClick={toggleMenu}>
+                <Link href="/" className="px-4 py-2 text-[#009846] font-medium" onClick={toggleMenu}>
                     Home
                 </Link>
                 <div className="px-4 py-2">

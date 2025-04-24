@@ -5,27 +5,23 @@ import Image from 'next/image';
 
 export default function ClientLogos() {
   const logos = Array.from({ length: 15 }, (_, i) => `/${i + 1}.png`);
-
-  // State to track screen size
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useEffect(() => {
-    // Check the screen width and update state accordingly
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024); // 1024px is the threshold for large screens
+      setIsLargeScreen(window.innerWidth >= 1024);
     };
 
-    handleResize(); // Initial check
-    window.addEventListener('resize', handleResize); // Add event listener for resize
+    handleResize();
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize); // Cleanup on component unmount
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  // Slice the logos based on screen size
-  const firstRow = isLargeScreen ? logos.slice(0, 7) : logos.slice(0, 9); // First row slice based on screen size
-  const secondRow = isLargeScreen ? logos.slice(7) : logos.slice(9); // Second row slice based on screen size
+  const firstRow = isLargeScreen ? logos.slice(0, 7) : logos.slice(0, 9); 
+  const secondRow = isLargeScreen ? logos.slice(7) : logos.slice(9);
 
   return (
     <section className="bg-[#009846] py-20 space-y-8">

@@ -6,7 +6,7 @@ import { MapPin ,Phone, Mail, ChevronsRight, Facebook, Twitter, Linkedin, Instag
 export default function Footer(){
     return(
         <footer className="relative bg-white w-full flex flex-col items-center text-black">
-            <div className="absolute -top-10 w-5/6 bg-white md:h-20 rounded-2xl flex text-xl  justify-between items-center md:px-20 shadow-2xl md:flex-row flex-col p-4 md:gap-0 gap-2">
+            <div className="absolute -top-10 w-5/6 bg-white md:h-20 rounded-2xl flex text-xl  justify-between items-center md:px-20 shadow-md md:flex-row flex-col p-4 md:gap-0 gap-2">
                 <h1>We Value Our <span className="font-bold">Customers</span></h1>
                 <button className="bg-[#009846] hover:bg-green-700 text-white px-6 py-2 rounded-md transition-colors text-sm">Get The Quote</button>
             </div> 
