@@ -1,7 +1,7 @@
 'use client';
 import heroImg from '@/public/hero.png';
-import Image from 'next/image';
-import scrolldown from '@/public/scrollDown.gif';
+// import Image from 'next/image';
+// import scrolldown from '@/public/scrollDown.gif';
 
 export default function Hero() {
     return (
